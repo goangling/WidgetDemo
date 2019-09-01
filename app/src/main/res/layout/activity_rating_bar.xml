@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RatingBarActivity">
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="38dp"
+        android:maxHeight="38dp"
+        android:numStars="5"
+        android:rating="3.5"
+        android:stepSize="0.1"
+        app:mrb_progressTint="@color/colorPrimary"
+        app:mrb_secondaryProgressTint="@color/colorAccent"
+        style="@style/Widget.MaterialRatingBar.RatingBar" />
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="38dp"
+    android:maxHeight="38dp"
+    android:numStars="5"
+    android:rating="3.5"
+    android:stepSize="0.5"
+    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator" />
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dynamic_material_rating_bar"
+         />
+
+
+    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srb_starSize="40dp"
+        app:srb_numberOfStars="5"
+        app:srb_rating="3"
+        app:srb_stepSize="0.5"
+        app:srb_borderColor="@color/colorPrimary"
+        app:srb_fillColor="@color/colorAccent"
+        />
+
+    <com.hedgehog.ratingbar.RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:clickable="true"
+        app:halfstart="true"
+        app:starCount="5"
+        app:starNum="3"
+        app:starEmpty="@mipmap/star_empty"
+        app:starFill="@mipmap/star_full"
+        app:starHalf="@mipmap/star_half"
+        app:starImageHeight="90dp"
+        app:starImageWidth="70dp"
+        app:starImagePadding="20dp"
+       />
+
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/ratingBarStyleIndicator"
+        android:isIndicator="false"
+        android:theme="@style/MyRatingBar"
+        android:rating="3.3"
+        android:numStars="5"
+        android:stepSize="0.1"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="2.3"
+        android:numStars="3"
+        android:stepSize="0.5"
+        android:progressTint="#FF0000"
+        style="@style/roomRatingBar_1"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="2.3"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:progressTint="#FF0000"
+        style="@style/roomRatingBar_1"
+        />
+    <RatingBar
+    android:id="@+id/raw_rating_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/roomRatingBar_1"
+    />
+    <RatingBar
+        android:id="@+id/raw_rating_bar_noempty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/roomRatingBar_1"
+        />
+</LinearLayout>
